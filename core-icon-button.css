@@ -62,4 +62,5 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 core-icon {
   display: block;
   vertical-align: middle;
+  pointer-events: none;
 }
