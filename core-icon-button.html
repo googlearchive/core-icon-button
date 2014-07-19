@@ -28,13 +28,13 @@ how to use a custom icon set.
 <link rel="import" href="../core-icon/core-icon.html">
 <link rel="import" href="../core-icons/core-icons.html">
 
-<polymer-element name="core-icon-button" attributes="src icon active">
+<polymer-element name="core-icon-button" attributes="src icon active size">
 
   <template>
 
     <link rel="stylesheet" href="core-icon-button.css">
 
-    <core-icon src="{{src}}" icon="{{icon}}"><content></content></core-icon>
+    <core-icon src="{{src}}" icon="{{icon}}" size="{{size}}"><content></content></core-icon>
 
   </template>
 
@@ -72,6 +72,15 @@ how to use a custom icon set.
        * @default ''
        */
       icon: '',
+
+      /**
+       * Specifies the size of the icon in pixel units.
+       *
+       * @attribute size
+       * @type string
+       * @default 24
+       */
+      size: 24,
 
       activeChanged: function() {
         this.classList.toggle('selected', this.active);
