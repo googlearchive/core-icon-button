@@ -24,8 +24,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <template is="auto-binding">
     <template repeat="{{icon in $.meta.metaData.icons.iconNames}}">
-      <core-icon-button icon="{{icon}}"><span>{{icon}}</span></core-icon-button>
+      <core-icon-button icon="{{icon}}" title="{{icon}}"></core-icon-button>
     </template>
+    <core-icon-button icon="menu"><span>label</span></core-icon-button>
   </div>
   <core-iconset id="meta"></core-iconset>
 </template>
